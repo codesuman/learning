@@ -16,6 +16,8 @@ public class Trie {
 
             currNode = currNode.setChar(currChar);
         }
+
+        currNode.setIsWord(true);
     }
 
     public static void main(String[] args) {
@@ -29,6 +31,7 @@ public class Trie {
 
 class TrieNode {
     private final Map<Character, TrieNode> map = new HashMap<>();
+    private boolean isWord = false;
 
     public boolean hasChar(Character chr) {
         return this.map.containsKey(chr);
@@ -42,5 +45,9 @@ class TrieNode {
         if(!this.hasChar(chr)) this.map.put(chr, new TrieNode());
 
         return this.getChar(chr);
+    }
+
+    public void setIsWord(boolean isWord) {
+        this.isWord = isWord;
     }
 }
