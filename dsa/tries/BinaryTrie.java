@@ -16,11 +16,13 @@ public class BinaryTrie {
 
         for(int i=31; i>=0; i--) {
             int bit = this.getBit(num, i);
-            boolean hasFlipBit = currNode.has(~bit);
+            int flippedBit = bit^1;
+
+            boolean hasFlipBit = currNode.has(flippedBit);
 
             result += hasFlipBit ? 1<<i : 0;
 
-            currNode = hasFlipBit ? currNode.get(~bit) : currNode.get(bit);
+            currNode = hasFlipBit ? currNode.get(flippedBit) : currNode.get(bit);
         }
 
         return result;
