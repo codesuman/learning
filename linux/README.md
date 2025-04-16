@@ -30,7 +30,7 @@ cat /etc/os-release
 
 This gives detailed info about your Linux distribution (works on most distros).
 
-:white_check_mark: ### Option 2: Use lsb_release
+### :white_check_mark: Option 2: Use lsb_release
 ```bash
 lsb_release -a
 ```
