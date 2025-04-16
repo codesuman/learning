@@ -1,4 +1,4 @@
-:computer: ***A Linux distribution (distro) is a complete operating system built upon the Linux kernel, which acts as the core of the OS.*** 
+### :computer: A Linux distribution (distro) is a complete operating system built upon the Linux kernel, which acts as the core of the OS.
 
 Think of the Linux kernel as the engine, while a distro is the entire car, including the chassis, interior, and all the other necessary components. Distros bundle the kernel with system libraries, utilities, application software, and a package management system.
 
@@ -18,7 +18,7 @@ Examples of Linux Distros:
 Ubuntu, Fedora, Debian, Mint, and Arch Linux.
 
 
-
+## COMMANDS 
 
 You can check the version of your Linux VM using any of the following commands in the terminal:
 
