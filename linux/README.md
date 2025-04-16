@@ -22,7 +22,7 @@ Ubuntu, Fedora, Debian, Mint, and Arch Linux.
 
 You can check the version of your Linux VM using any of the following commands in the terminal:
 
-:white_check_mark: ### Option 1: Check using cat on release files
+:white_check_mark:### Option 1: Check using cat on release files
 
 ```bash
 cat /etc/os-release
