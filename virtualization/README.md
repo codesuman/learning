@@ -17,13 +17,13 @@ So when they say “SSH into my VM,” they’re connecting to this virtual Linu
 ### :question: How do you see it when you SSH?
 When you SSH, you just get a terminal session into a Linux box — no matter whether it's:
 
-A bare-metal Linux server (real physical machine),
+* A bare-metal Linux server (real physical machine),
 
-A VM (virtualized),
+* A VM (virtualized),
 
-A container (like Docker or K8s),
+* A container (like Docker or K8s),
 
-Or even a cloud instance (e.g., EC2 on AWS).
+* Or even a cloud instance (e.g., EC2 on AWS).
 
 So they all “feel” the same when you SSH — it’s just a Linux prompt. But what’s under the hood is different.
 
