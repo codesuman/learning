@@ -4,15 +4,15 @@ VM stands for Virtual Machine — it's like a computer inside a computer. It run
 ### :white_check_mark: So what are your colleagues referring to when they say "VM"?
 They usually mean:
 
-“I’m working on a Linux system that’s running inside a virtual machine — like in VMware, VirtualBox, Hyper-V, or on a cloud like AWS, Azure, GCP.”
+> “I’m working on a Linux system that’s running inside a virtual machine — like in VMware, VirtualBox, Hyper-V, or on a cloud like AWS, Azure, GCP.”
 
 So when they say “SSH into my VM,” they’re connecting to this virtual Linux instance that’s:
 
-Isolated from their main OS
+* Isolated from their main OS
 
-Has its own filesystem, users, network
+* Has its own filesystem, users, network
 
-But is actually not a real separate physical computer
+* But is actually not a real separate physical computer
 
 ### :question: How do you see it when you SSH?
 When you SSH, you just get a terminal session into a Linux box — no matter whether it's:
