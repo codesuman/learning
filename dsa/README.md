@@ -14,6 +14,10 @@ Cool repo to cover all major & frequently asked DSA questions
 2. Sliding window patterns:
  - https://lnkd.in/gjatQ5pK
 
+| Problem | Read | Description |
+| :---         |     :---:      |          ---: |
+| [Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/description/) | [2 Pointers](https://github.com/doocs/leetcode/blob/main/solution/0700-0799/0713.Subarray%20Product%20Less%20Than%20K/README_EN.md#solution-1-two-pointers) | - |
+
 3. Two pointer patterns:
  - https://lnkd.in/gBfWgHYe
 
