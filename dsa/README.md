@@ -16,37 +16,37 @@ Cool repo to cover all major & frequently asked DSA questions
 
 | Problem | Read | Description |
 | :---         |     :---:      |          ---: |
-| [Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/description/) | [2 Pointers](https://github.com/doocs/leetcode/blob/main/solution/0700-0799/0713.Subarray%20Product%20Less%20Than%20K/README_EN.md#solution-1-two-pointers) | - |
+| [Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/description/) | [2 Pointers](https://github.com/doocs/leetcode/blob/main/solution/0700-0799/0713.Subarray%20Product%20Less%20Than%20K/README_EN.md#solution-1-two-pointers) | [Sub-Arrays Count logic](sliding_window/notes/SubArrayProductLessThanK.md) |
 
-3. Two pointer patterns:
+1. Two pointer patterns:
  - https://lnkd.in/gBfWgHYe
 
-4. Backtracking patterns:
+2. Backtracking patterns:
  - https://lnkd.in/g9csxVa4
 
-5. Dynamic Programming patterns:
+3. Dynamic Programming patterns:
  - https://lnkd.in/gbpRU46g
 
-6. Binary search patterns:
+4. Binary search patterns:
  - https://lnkd.in/gKEm_qUK
 
-7. Tree patterns:
+5. Tree patterns:
  - https://lnkd.in/gKja_D5H
 
-8. Graph patterns: 
+6. Graph patterns: 
  - https://lnkd.in/gKE6w7Jb
 
-9. Monotonic patterns:
+7. Monotonic patterns:
  - https://lnkd.in/gdYahWVN
 
-10. Bit manipulation patterns:
+8.  Bit manipulation patterns:
  - https://lnkd.in/gmMMST5J
 
-11. String question patterns:
+9.  String question patterns:
  - https://lnkd.in/gkNvEi8j
 
-12. DFS and BFS patterns:
+10. DFS and BFS patterns:
  - https://lnkd.in/gPgpsgaQ
 
-13. Fourteen Coding interview patterns:
+11. Fourteen Coding interview patterns:
  - https://lnkd.in/gMZJVkFf
