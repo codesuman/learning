@@ -1,3 +1,41 @@
+## [Sqrt(x)](https://leetcode.com/problems/sqrtx/description/)
+
+### Description
+---
+Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well.
+
+You must not use any built-in exponent function or operator.
+  
+### Solution
+
+```java
+    public int mySqrt(int x) {
+        // For special cases when x is 0 or 1, return x.
+        if (x == 0 || x == 1)
+            return x;
+
+        // Initialize the search range for the square root.
+        int low = 1;
+        int high = x;
+        int ans = 0;
+
+        while (low <= high){
+            int mid = low + (high-low)/2;
+            
+            if (mid <= x/mid){
+                ans = mid;
+                low = mid +1;
+            }
+            else
+                high = mid-1;
+        }
+        
+        return ans;
+    }
+```
+
+### Solution with comments
+
 ```java
 /**
  * 🚀 Efficiently calculates the integer square root of a non-negative integer.
