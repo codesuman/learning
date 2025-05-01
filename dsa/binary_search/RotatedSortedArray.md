@@ -137,7 +137,7 @@ class RotatedSortedArray {
              * For example, if `mid` is zero (0️⃣), then `mid - 1` would be negative one (-1️⃣), which is an invalid index.
              * Adding the length of the array (`len`) and then taking the modulo (`% len`) will result in the last index of the array. 尾➡️
              *
-             * 🤔 You might be thinking, why do we need the modulo operator (`%`) here when we just have `(mid + len - 1)`?
+             * 🤔 You might be thinking, why do we need the modulo operator (`%`) here when we can just have `(mid + len - 1)`?
              * For example, if `mid` is any non-zero value, like `mid = 3` when `len = 5`, then `(mid + len - 1)` would be 7️⃣, which is out of bounds. 💥
              * The modulo operator (`%`) helps to reset 7️⃣ to 2️⃣: `(3 + 5 - 1) % 5 = 7 % 5 = 2`. 🔄
              */
