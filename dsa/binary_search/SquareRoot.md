@@ -102,3 +102,47 @@ this value.
 is a potential candidate for the integer square root, so we store it in `ans`
 and try to search for a larger possible square root in the right half
 (`low = mid + 1`).
+
+### WHY `while (low <= high)` CONDITION : 
+
+#### Scenario 1: `while (low < high)`
+
+:one: Initialization: low = 1, high = 3, ans = 0
+:two: Iteration 1:
+* mid = low + (high - low) / 2 = 1 + (3 - 1) / 2 = 1 + 1 = 2
+* mid * mid = 4, which is greater than x = 3.
+* The condition mid <= x / mid (i.e., 2 <= 3 / 2 which is 2 <= 1) is false.
+* Therefore, high = mid - 1 = 2 - 1 = 1.
+:three: Loop Condition Check: low (1) < high (1) is false. The loop exits.
+:four: Result: The function returns the initial value of ans, which is 0. This is incorrect, as the integer square root of 3 is 1. ❌
+
+#### Scenario 2: `while (low <= high)`
+
+:one: Initialization: low = 1, high = 3, ans = 0
+:two: Iteration 1:
+* mid = low + (high - low) / 2 = 1 + (3 - 1) / 2 = 1 + 1 = 2
+* mid * mid = 4, which is greater than x = 3.
+* The condition mid <= x / mid (i.e., 2 <= 3 / 2 which is 2 <= 1) is false.
+* Therefore, high = mid - 1 = 2 - 1 = 1.
+:three: Loop Condition Check: low (1) <= high (1) is true. The loop continues.
+:four: Iteration 2:
+* mid = low + (high - low) / 2 = 1 + (1 - 1) / 2 = 1 + 0 = 1
+* mid * mid = 1, which is less than or equal to x = 3.
+* The condition mid <= x / mid (i.e., 1 <= 3 / 1 which is 1 <= 3) is true.
+* Therefore, ans = mid = 1, and low = mid + 1 = 1 + 1 = 2.
+:five: Loop Condition Check: low (2) <= high (1) is false. The loop exits.
+:six: Result: The function returns the final value of ans, which is 1. This is the correct integer square root of 3. ✅
+
+Why while (low <= high) is Crucial Here:
+
+Ensuring Potential Answer is Considered: The while (low <= high) condition allows the loop to continue even when low and high converge to a single value. This final value of mid (when low == high) is a potential candidate for the integer square root and needs to be evaluated. In the x = 3 example, the value 1 (the correct answer) becomes the mid when low and high meet.
+
+Capturing the Floor Value: The goal is to find the largest integer less than or equal to the square root. When the exact square root isn't an integer, the binary search needs to narrow down to the floor value. The while (low <= high) loop, combined with updating ans whenever mid <= x / mid, ensures that we keep track of the largest mid that satisfies the condition. Even when the loop terminates, ans holds the best valid mid found.
+
+#### In summary:
+
+The while (low <= high) condition in this integer square root implementation is essential for:
+
+* ✅ Considering the final potential answer when low and high meet.
+* 🏆 Correctly capturing the floor value of the square root when it's not an integer.
+* 🛡️ Robustly handling edge cases like x = 0 and x = 1.
