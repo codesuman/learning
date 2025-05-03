@@ -22,10 +22,9 @@ class TrieNode {
     }
 
     public TrieNode set(Character chr) {
-        TrieNode node = new TrieNode();
-        this.characterMap.put(chr, node);
+        if(!this.has(chr)) this.characterMap.put(chr, new TrieNode());
 
-        return node;
+        return this.get(chr);
     }
 
     public void autoComplete() {
@@ -69,12 +68,7 @@ class Trie {
 
         for(int i=0; i < word.length(); i++) {
             Character currChar = word.charAt(i);
-
-            if(currNode.has(currChar)) {
-                currNode = currNode.get(currChar);
-            } else {
-                currNode = currNode.set(currChar);
-            }
+            currNode = currNode.set(currChar);
 
             currNode.addWeight(weight, word);
         }
