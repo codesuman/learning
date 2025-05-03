@@ -1,3 +1,6 @@
+### Code :
+
+```java
 import java.lang.*;
 import java.util.*;
 
@@ -100,7 +103,23 @@ class Trie {
         }
     }
 }
+```
 
+### Usage :
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        Trie trie = new Trie();
+        trie.insert(new String[]{"abcd", "aecd", "abaa", "abef", "acdcc", "acbcc"}, new int[]{2, 1, 3, 4, 6, 5});
+        trie.search(new String[]{"ab", "abc", "a"});
+    }
+}
+```
+
+### Usage from CLI :
+
+```java
 public class Main {
     public static void main(String[] args) {
         // YOUR CODE GOES HERE
@@ -134,3 +153,4 @@ public class Main {
         }
     }
 }
+```
