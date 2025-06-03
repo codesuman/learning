@@ -1,0 +1,1 @@
+[How JavaScript Lint Rules Work and Why Abstract Syntax Trees Matter](https://www.freecodecamp.org/news/how-javascript-lint-rules-work-and-why-abstract-syntax-trees-matter/)
