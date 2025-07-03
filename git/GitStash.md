@@ -2,7 +2,7 @@ To create a named stash in Git, use the git stash push command with the -m or --
 
 ### Here's how to do it:
 
-### Stashing with a name:
+### Stashing with a name: 
 ```bash
    git stash push -m "feature/new-login-ui"
 ```
